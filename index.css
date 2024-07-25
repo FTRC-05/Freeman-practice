@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  padding-top: 40px;
+  box-shadow: 0px 2px 2px #dfdfdf;
+}
+
+header img {
+  height: 50px;
+}
+
+header a {
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+header i {
+  font-size: 9px;
+  margin-top: 30px;
+}
+
+header #menu {
+  display: none;
+}
+
+.banner {
+  background-color: blue;
+  height: 400px;
+  width: 100%;
+  color: lightblue;
+}
+.banner .text {
+  padding-left: 150px;
+  padding-top: 50px;
+  /* text-align: left; */
+  display: flex;
+  flex-direction: column;
+  float: left;
+  line-height: 30px;
+}
+.banner i {
+  padding-left: 0px;
+  padding-top: 100px;
+  font-size: 20px;
+  color: white;
+}
+.cloud i {
+  display: flex;
+  float: right;
+  font-size: 170px;
+  margin-right: 300px;
+  margin-top: 20px;
+}
+
+.services {
+  margin-top: 40px;
+}
+
+.services #services {
+  background-color: rgb(0, 0, 114);
+  color: white;
+  border-radius: 5px;
+  max-width: 90px;
+  margin-left: 120px;
+  padding: 5px;
+  position: relative;
+  top: 15px;
+  z-index: 999;
+  box-shadow: 5px 0px lightblue;
+}
+
+.services hr {
+  position: relative;
+  left: 75px;
+  width: 1090px;
+}
+
+.services .container {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap; /* Wrap services onto multiple rows */
+  justify-content: space-between; /* Distribute services evenly */
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+.services .grid {
+  height: 160px;
+  width: 300px;
+  background-color: #ffffffb6;
+  color: black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.grid .heading {
+  color: rgb(0, 0, 114);
+  text-align: center;
+  font-weight: bold;
+}
+
+.grid .body {
+  font-weight: 100;
+  color: rgb(91, 91, 91);
+  margin-top: 10px;
+}
+
+.grid i {
+  color: black;
+}
+
+.products #products {
+  background-color: rgb(0, 0, 114);
+  color: white;
+  border-radius: 5px;
+  max-width: 90px;
+  margin-left: 120px;
+  padding: 5px;
+  position: relative;
+  top: 15px;
+  z-index: 999;
+  box-shadow: 5px 0px lightblue;
+}
+
+.products,
+.contact hr {
+  position: relative;
+  left: 75px;
+  width: 1090px;
+}
+
+.products .container {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap; /* Wrap services onto multiple rows */
+  justify-content: space-between; /* Distribute services evenly */
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+.products .grid {
+  height: 160px;
+  width: 300px;
+  background-color: #ffffffb6;
+  color: black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.grid .heading {
+  color: rgb(0, 0, 114);
+  text-align: center;
+  font-weight: bold;
+}
+
+.grid .body {
+  font-weight: 100;
+  color: rgb(91, 91, 91);
+  margin-top: 10px;
+}
+
+.contact #contact {
+  background-color: rgb(0, 0, 114);
+  color: white;
+  border-radius: 5px;
+  max-width: 90px;
+  margin-left: 120px;
+  padding: 5px;
+  position: relative;
+  top: 15px;
+  z-index: 999;
+  box-shadow: 5px 0px lightblue;
+}
+
+.contactbox {
+  position: relative;
+  height: 300px;
+  width: 700px;
+  top: 70px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 1px 3px 5px 2px #8d8b8b;
+}
+
+.contactbox .heading {
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+}
+
+.contactbox p {
+  margin-left: 10px;
+}
+
+.contactbox .text hr {
+  width: 300px;
+}
+
+.contactbox iframe {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+
+.contactbox .text {
+  padding-top: 70px;
+}
+
+.partners {
+  margin-top: 120px;
+}
+
+.partners #partners {
+  background-color: rgb(0, 0, 114);
+  color: white;
+  border-radius: 5px;
+  max-width: 90px;
+  margin-left: 120px;
+  padding: 5px;
+  position: relative;
+  top: 15px;
+  z-index: 999;
+  box-shadow: 5px 0px lightblue;
+}
+
+.partners hr {
+  position: relative;
+  left: 75px;
+  width: 1090px;
+}
+
+.partners .images {
+  position: absolute;
+  top: 650%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: slide 20s infinite linear;
+}
+
+.images img {
+  height: 50px;
+  display: inline-block;
+  margin: 40px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-200%);
+  } /* Reset first image position */
+}
+
+footer {
+  background-color: blue;
+  height: 400px;
+  width: 100%;
+  color: lightblue;
+  margin-top: 250px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 30px;
+}
+
+footer ul {
+  list-style: none;
+  line-height: 30px;
+}
+
+footer a {
+  color: #dfdfdf;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 430px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header a {
+    display: none;
+  }
+
+  .banner {
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .banner .text {
+    padding-left: 10px;
+  }
+
+  .cloud i {
+    display: none;
+  }
+
+  .products {
+    display: block;
+    flex-wrap: wrap;
+    max-width: 300px;
+  }
+
+  .contact {
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  .contact .contactbox {
+    max-width: 300px;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    margin-top: 30px;
+    max-width: 395px;
+    padding: 10px;
+    display: block;
+    height: 650px;
+  }
+
+  footer p {
+    margin-top: 30px;
+  }
+}
